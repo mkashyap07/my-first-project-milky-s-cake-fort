@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow: hidden;
+}
+header{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('img/cake.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    
+}
+.row{
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-flex;
+    /* background-color: yellow; */
+    width: 100%;
+}
+.logo {
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    padding: 20px;
+    width: 30%;
+    /* background-color: darkcyan; */
+}
+.logo img{
+    height: 90px;
+    width: 120px;
+    border-radius: 50px;
+
+}
+ .menu{ 
+    margin-top: 10px;
+    text-align: right;
+    width: 70%;
+ } 
+.menu ul{
+    /* background-color: white; */
+    /* display: inline-flex; */
+    /* right:20px; */
+    width: 100%;
+    text-decoration: none;
+    right: 40px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.menu li{
+    /* float: right; */
+    display: inline;
+    text-decoration: none;
+    margin: 10px;
+    right: 50px;
+}
+.menu li a{
+    margin-top: 50px;
+    color: mediumaquamarine;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 30px;
+    text-align: right;
+}
+.menu li a:first-child ::before{
+    text-decoration: underline;
+}
+.menu li a :first-child ::after:hover{
+     color:mediumblue;
+     border-radius: 40px;
+     padding: 10px;
+     border:2px solid white;
+}
+.menu li a:hover{
+    color:mediumblue;
+    border-radius: 40px;margin-top: 40px;
+    padding: 10px;
+    border:white solid;
+}
+.menu img{
+    width: 20px;
+    height: 20px;
+    
+}
+.main{
+    margin: 100px;
+    padding: 30px;
+    text-align: center;
+    color: lightyellow;
+    max-width: 1120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.main h1{
+    margin: 20px;
+    padding: 20px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-shadow: gray 2px 2px 5px;
+}
+.main p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.main span{
+    color:lightgreen;
+    animation: click_here 1s infinite;
+}
+@keyframes click_here{
+    0%{color:mediumaquamarine}
+    25%{color:darkcyan}
+    50%{color:yellow}
+    75%{color:blue}
+    100%{color:mediumaquamarine}
+}
+.main a{
+    border-radius: 30px;
+    /* border: white solid; */
+    margin-top:20px;
+}
+.btn{
+    margin: 10px;
+    padding: 20px;
+    color: mediumseagreen;
+    border: 2px solid mediumaquamarine;
+    text-decoration: none;
+    transition: background-color 0.2s,barder 0.2s, color 0.2;
+}
+.btn:hover{
+    background-color:mediumaquamarine;
+    color: white;
+    border: 5px solid rgb(3, 82, 82);
+}
+/* //////responsive/////////////////////////////// */
+@media only screen and (max-width:1180px){
+    .main h1{
+    width: 100%;
+    padding: 0 2%;
+}
+.menu li a{
+    display: none;
+}
+.btn{
+    width: 100%;
+
+}
+}
+@media only screen and (max-width:998px){
+    .main h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width:768px){
+    .main h1{
+        font-size: 180%;
+    }
+}
+
